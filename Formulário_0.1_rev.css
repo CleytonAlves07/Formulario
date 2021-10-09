@@ -1,0 +1,68 @@
+body {
+    background-image: linear-gradient(to right, royalblue, slateblue);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+    position: absolute;
+    top:20%; left:30%;
+    transition: translate(-50%, -50%);
+    width: 400px;;
+    background-color: rgba(31, 31, 31, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+fieldset {
+    border: 2px solid royalblue;
+}
+legend {
+    background-color: royalblue;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.inputBox {
+    position: relative;
+}
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    outline: none;
+    color: white;
+    font-size:15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.inputLabel {
+    position: absolute;
+    top:0; left:0;
+}
+.inputUser:focus ~ .inputLabel,
+.inputUser:valid ~ .inputLabel {
+    top:-15px;
+    color: royalblue;
+    font-size: 12px;
+    transition: 0.5s;
+}
+#data {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+#submit {
+    width: 100%;
+    padding: 5px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+#submit:hover {
+    background-color: dodgerblue;
+    transition: 0.5s;
+}
